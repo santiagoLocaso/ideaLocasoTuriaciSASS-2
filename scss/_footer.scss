@@ -1,0 +1,42 @@
+@media only screen and (min-width: 1024px) {
+	@mixin sizes($width){
+		width: $width;
+	}
+	.whatsapp{
+		@include sizes(6%);
+	}
+	.facebook{
+		@include sizes(11%);
+	}
+	.instagram{
+		@include sizes (7%);
+	}
+}
+@media only screen and (min-width: 0px) and (max-width: 768px){
+	.logoFooter{
+    	display: flex;
+    	justify-content: center;
+    }
+	.datosFooter{
+		top: 10px;
+		font-size: 18px;
+		text-align: center;
+    	position: relative;
+    }
+    .redes{
+    	top: 35px;
+    	text-align: center;
+    }
+	@mixin sizes($width){
+		width: $width;
+	}
+	.whatsapp{
+		@include sizes(15%);
+	}
+	.facebook{
+		@include sizes(24%);
+	}
+	.instagram{
+		@include sizes (15%);
+	}
+}
