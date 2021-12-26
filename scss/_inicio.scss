@@ -30,6 +30,25 @@ $fontSz: 24px;
 		top: 250px;
 	}
 }
+
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+	.fondoIndex{
+		width: 100%
+	}
+	.titulo{
+		font-size: $fontSz;
+		text-align: $txAlign;
+	}
+	.titulo__pagina{
+		font-size: 45px;
+		text-align: $txAlign;
+	}
+	.descripcion{
+		font-size: 25px;
+		text-align: $txAlign;
+	}
+}
+
 @media only screen and (min-width: 0px) and (max-width: 768px) {
 	.fondoIndex{
 		width: 100%

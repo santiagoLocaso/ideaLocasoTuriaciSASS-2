@@ -7,6 +7,19 @@
 	}
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+	#navbarNav{
+		justify-content: flex-end;
+		text-align: center;
+		ul{
+			font-size: 20px;
+		}
+	}
+	.logoInicio{
+		width: 35%;
+	}
+}
+
 @media only screen and (min-width: 0px) and (max-width: 768px){
 	#navbarNav{
 		justify-content: flex-end;
@@ -16,6 +29,6 @@
 		}
 	}
 	.logoInicio{
-		width: 80%;
+		width: 50%;
 	}
 }

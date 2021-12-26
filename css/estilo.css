@@ -20,6 +20,19 @@ body {
     position: relative;
     top: 250px; } }
 
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .fondoIndex {
+    width: 100%; }
+  .titulo {
+    font-size: 24px;
+    text-align: center; }
+  .titulo__pagina {
+    font-size: 45px;
+    text-align: center; }
+  .descripcion {
+    font-size: 25px;
+    text-align: center; } }
+
 @media only screen and (min-width: 0px) and (max-width: 768px) {
   .fondoIndex {
     width: 100%; }
@@ -38,6 +51,15 @@ body {
     #navbarNav ul {
       font-size: 25px; } }
 
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  #navbarNav {
+    justify-content: flex-end;
+    text-align: center; }
+    #navbarNav ul {
+      font-size: 20px; }
+  .logoInicio {
+    width: 35%; } }
+
 @media only screen and (min-width: 0px) and (max-width: 768px) {
   #navbarNav {
     justify-content: flex-end;
@@ -45,13 +67,34 @@ body {
     #navbarNav ul {
       font-size: 20px; }
   .logoInicio {
-    width: 80%; } }
+    width: 50%; } }
 
 @media only screen and (min-width: 1024px) {
   .redes {
     text-align: end; }
   .whatsapp {
     width: 6%; }
+  .facebook {
+    width: 11%; }
+  .instagram {
+    width: 7%; } }
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .logoFooter {
+    display: flex;
+    justify-content: end;
+    width: 60%;
+    left: 83px; }
+  .datosFooter {
+    top: 10px;
+    font-size: 18px;
+    text-align: center;
+    position: relative; }
+  .redes {
+    padding-top: 17px;
+    text-align: center; }
+  .whatsapp {
+    width: 7%; }
   .facebook {
     width: 11%; }
   .instagram {
@@ -90,8 +133,8 @@ body {
         transform: translateY(-15px);
         box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2); }
       .container .card img {
-        width: 330px;
-        height: 220px; }
+        width: auto;
+        height: auto; }
       .container .card h4 {
         font-weight: 600; }
       .container .card p {
@@ -111,6 +154,32 @@ body {
     font-size: 45px;
     position: relative;
     top: 170px; } }
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    padding: auto; }
+    .container .card {
+      width: auto;
+      height: auto;
+      margin-bottom: 20px;
+      text-align: center;
+      transition: all 0.25s; }
+      .container .card:hover {
+        transform: translateY(-15px);
+        box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2); }
+      .container .card img {
+        width: auto;
+        height: 220px; }
+  .descripcionProyec {
+    font-size: 25px; }
+  .subtitulo {
+    text-align: center; }
+  .imgNosotros {
+    width: 100%;
+    padding-bottom: 10px; }
+  .quienes__somos {
+    text-align: center;
+    font-size: 25px; } }
 
 @media only screen and (min-width: 0px) and (max-width: 768px) {
   .container {
@@ -185,6 +254,61 @@ body {
         width: 5%; }
       footer .redesGrid .instagramGrid {
         width: 3%; } }
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .gridPadre {
+    display: grid;
+    grid-template-areas: "logo" "nav" "main" "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 100px 150px 1fr 200px; }
+  header.logo {
+    grid-area: logo;
+    display: flex;
+    justify-content: center;
+    padding: 0%; }
+  header#navbarNav {
+    grid-area: nav;
+    justify-content: flex-end;
+    text-align: center; }
+    header#navbarNav ul {
+      font-size: 23px; }
+  .logoInicio {
+    width: 56%; }
+  main {
+    grid-area: main;
+    padding-top: 95px; }
+    main .titulo__pagina {
+      font-size: 43px; }
+    main .formulario {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      main .formulario .casillas__form {
+        width: 85%; }
+      main .formulario .boton {
+        width: 30%; }
+      main .formulario .tituloForm {
+        font-size: 30px;
+        text-align: center; }
+    main .mapa {
+      width: 100%; }
+    main .direccion {
+      text-align: center; }
+  footer {
+    grid-area: footer; }
+    footer .datosFooterGrid {
+      text-align: center;
+      font-size: 22px; }
+      footer .datosFooterGrid .contactoFooterGrid {
+        font-size: 25px; }
+    footer .redesGrid {
+      text-align: center; }
+      footer .redesGrid .whatsappGrid {
+        width: 7%; }
+      footer .redesGrid .facebookGrid {
+        width: 11%; }
+      footer .redesGrid .instagramGrid {
+        width: 7%; } }
 
 @media only screen and (min-width: 0px) and (max-width: 768px) {
   .gridPadre {
