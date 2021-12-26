@@ -1,6 +1,6 @@
 $estilos:(
-	ancho: 338px,
-	alto: 330px,
+	ancho: auto,
+	alto: auto,
 	margen: 20px,
 	centro: center,
 	transicion: all 0.25s
@@ -42,7 +42,7 @@ $estilos:(
 	.imgNosotros{
 		width: 100%;
 		position: relative;
-		top: 30px;
+		padding-bottom: 30px;
 	}
 	.quienes__somos{
 		text-align: center;
@@ -53,20 +53,19 @@ $estilos:(
 }
 @media only screen and (min-width: 0px) and (max-width: 768px){
 	.container{
-		padding: 5px;
+		padding: auto;
 		.card{
 			width: map-get($estilos, ancho);
 			height: map-get($estilos, alto);
-			margin: map-get($estilos, margen);
+			margin-bottom: map-get($estilos, margen);
 			text-align: map-get($estilos, centro);
 			transition: map-get($estilos, transicion);
-			margin: 0;
 			&:hover{
 	    	transform: translateY(-15px);
 	    	box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
 			}
 			img{
-				width: 336px;
+				width: map-get($estilos, ancho);
 				height: 220px;
 			}
 		}
@@ -79,14 +78,11 @@ $estilos:(
 	}
 	.imgNosotros{
 		width: 100%;
-		position: relative;
-		top: 30px;
+		padding-bottom: 10px;
 	}
 	.quienes__somos{
 		text-align: center;
 		font-size: 25px;
-		position: relative;
-		top: 70px;
 	}
 }
 

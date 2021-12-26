@@ -2,6 +2,9 @@
 	@mixin sizes($width){
 		width: $width;
 	}
+	.redes{
+		text-align: end;
+	}
 	.whatsapp{
 		@include sizes(6%);
 	}
@@ -24,7 +27,7 @@
     	position: relative;
     }
     .redes{
-    	top: 35px;
+    	padding-top: 17px;
     	text-align: center;
     }
 	@mixin sizes($width){

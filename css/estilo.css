@@ -24,9 +24,9 @@ body {
   .fondoIndex {
     width: 100%; }
   .titulo {
-    font-size: 21px; }
+    font-size: 24px; }
   .titulo__pagina {
-    font-size: 21px;
+    font-size: 24px;
     text-align: center; }
   .descripcion {
     font-size: 20px;
@@ -48,6 +48,8 @@ body {
     width: 80%; } }
 
 @media only screen and (min-width: 1024px) {
+  .redes {
+    text-align: end; }
   .whatsapp {
     width: 6%; }
   .facebook {
@@ -65,7 +67,7 @@ body {
     text-align: center;
     position: relative; }
   .redes {
-    top: 35px;
+    padding-top: 17px;
     text-align: center; }
   .whatsapp {
     width: 15%; }
@@ -79,8 +81,8 @@ body {
     display: flex;
     justify-content: center; }
     .container .card {
-      width: 338px;
-      height: 330px;
+      width: auto;
+      height: auto;
       margin: 20px;
       text-align: center;
       transition: all 0.25s; }
@@ -103,7 +105,7 @@ body {
   .imgNosotros {
     width: 100%;
     position: relative;
-    top: 30px; }
+    padding-bottom: 30px; }
   .quienes__somos {
     text-align: center;
     font-size: 45px;
@@ -112,19 +114,18 @@ body {
 
 @media only screen and (min-width: 0px) and (max-width: 768px) {
   .container {
-    padding: 5px; }
+    padding: auto; }
     .container .card {
-      width: 338px;
-      height: 330px;
-      margin: 20px;
+      width: auto;
+      height: auto;
+      margin-bottom: 20px;
       text-align: center;
-      transition: all 0.25s;
-      margin: 0; }
+      transition: all 0.25s; }
       .container .card:hover {
         transform: translateY(-15px);
         box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2); }
       .container .card img {
-        width: 336px;
+        width: auto;
         height: 220px; }
   .descripcionProyec {
     font-size: 25px; }
@@ -132,13 +133,10 @@ body {
     text-align: center; }
   .imgNosotros {
     width: 100%;
-    position: relative;
-    top: 30px; }
+    padding-bottom: 10px; }
   .quienes__somos {
     text-align: center;
-    font-size: 25px;
-    position: relative;
-    top: 70px; } }
+    font-size: 25px; } }
 
 @media only screen and (min-width: 1024px) {
   .gridPadre {
@@ -146,34 +144,13 @@ body {
     grid-template-areas: "logo nav nav nav" "main main main main" "footer footer footer footer";
     grid-template-rows: 100px 1fr 286px;
     grid-template-columns: repeat(4, 25%); }
-  .logo {
+  .logoInicio {
     grid-area: logo; }
-  section.nav-nav {
+  #navbarNav {
     grid-area: nav;
-    display: flex;
-    align-items: flex-end;
     justify-content: flex-end; }
-    section.nav-nav ul li {
-      text-decoration: none;
-      display: inline-block;
-      list-style: none;
-      margin: 0 20px;
-      position: relative; }
-      section.nav-nav ul li::before {
-        content: "";
-        height: 3px;
-        width: 0%;
-        background-color: black;
-        position: absolute;
-        left: 0;
-        bottom: -10px;
-        transition: 0.4s ease-out; }
-        section.nav-nav ul li::before:hover {
-          width: 100%; }
-      section.nav-nav ul li a {
-        text-decoration: none;
-        color: black;
-        font-weight: bold; }
+    #navbarNav ul {
+      font-size: 25px; }
   main {
     grid-area: main; }
     main .formulario {
@@ -194,51 +171,43 @@ body {
     text-align: center;
     font-size: 25px; }
   footer {
-    gird-area: footer; }
+    grid-area: footer; }
     footer .datosFooterGrid {
-      display: flex;
-      padding-left: 25px;
-      font-size: 17px; }
+      font-size: 22px;
+      text-align: center; }
       footer .datosFooterGrid .contactoFooterGrid {
-        font-size: 17px; }
-    footer .redesGrid .whatsappGrid {
-      width: 10%; }
-    footer .redesGrid .facebookGrid {
-      width: 16%; }
-    footer .redesGrid .instagramGrid {
-      width: 10%; } }
+        font-size: 25px; }
+    footer .redesGrid {
+      text-align: end; }
+      footer .redesGrid .whatsappGrid {
+        width: 3%; }
+      footer .redesGrid .facebookGrid {
+        width: 5%; }
+      footer .redesGrid .instagramGrid {
+        width: 3%; } }
 
 @media only screen and (min-width: 0px) and (max-width: 768px) {
   .gridPadre {
     display: grid;
     grid-template-areas: "logo" "nav" "main" "footer";
     grid-template-columns: 100%;
-    grid-template-rows: 100px 150px 1fr 350px 200px; }
+    grid-template-rows: 100px 150px 1fr 200px; }
   header.logo {
     grid-area: logo;
     display: flex;
     justify-content: center;
     padding: 0%; }
-  section.nav-nav {
+  header#navbarNav {
     grid-area: nav;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-    section.nav-nav ul li {
-      display: flex;
-      flex-direction: column;
-      text-decoration: none;
-      text-align: center;
-      list-style: none;
-      padding: 5px 5px; }
-    section.nav-nav ul {
-      padding: 0; }
-    section.nav-nav a {
-      text-decoration: none;
-      color: black;
-      font-weight: bold; }
+    justify-content: flex-end;
+    text-align: center; }
+    header#navbarNav ul {
+      font-size: 20px; }
+  .logoInicio {
+    width: 80%; }
   main {
-    grid-area: main; }
+    grid-area: main;
+    padding-top: 55px; }
     main .titulo__pagina {
       font-size: 30px; }
     main .formulario {
@@ -254,8 +223,10 @@ body {
         text-align: center; }
     main .mapa {
       width: 100%; }
+    main .direccion {
+      text-align: center; }
   footer {
-    gird-area: footer; }
+    grid-area: footer; }
     footer .datosFooterGrid {
       text-align: center;
       font-size: 17px; }

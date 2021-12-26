@@ -8,39 +8,15 @@
 		grid-template-rows: 100px 1fr 286px;
 		grid-template-columns: repeat(4, 25%);
 	}
-	.logo{
+	.logoInicio{
 		grid-area: logo;
 	}
-	section.nav-nav{
+	#navbarNav{
 		grid-area: nav;
-		display: flex;
-		align-items: flex-end;
-		justify-content: flex-end;
-		ul li{
-			text-decoration: none;
-			display: inline-block;
-			list-style: none;
-			margin: 0 20px;
-			position: relative;
-			&::before{
-				content: "";
-				height: 3px;
-				width: 0%;
-				background-color: black;
-				position: absolute;
-				left: 0;
-				bottom: -10px;
-				transition: 0.4s ease-out;
-				&:hover{
-					width: 100%;
-				}
-			}
-			a{
-				text-decoration: none;
-				color: black;
-				font-weight: bold;
-			}
-		}
+	 	justify-content: flex-end;
+	 	ul{
+	 		font-size: 25px;
+	 	}
 	}
 	main{
 		grid-area: main;
@@ -69,29 +45,29 @@
 		font-size: 25px;
 	}
 	footer{
-		gird-area: footer;
+		grid-area: footer;
 		.datosFooterGrid{
-			display: flex;
-			padding-left: 25px;
-			font-size: 17px;
+			font-size: 22px;
+			text-align: center;
 			.contactoFooterGrid{
-				font-size: 17px;
+				font-size: 25px;
 			}
 		}
 		.redesGrid{
+			text-align: end;
 			.whatsappGrid{
-				width: 10%;
+				width: 3%;
 			}
 			.facebookGrid{
-				width: 16%;
+				width: 5%;
 			}
 			.instagramGrid{
-				width: 10%;
+				width: 3%;
 			}
 		}
 	}
 }
-@media only screen and (min-width: 0px) and (max-width: 768px) {
+@media only screen and (min-width: 0px) and (max-width: 768px){
 	.gridPadre{
 		display: grid;
 		grid-template-areas: 
@@ -100,7 +76,7 @@
 		"main"
 		"footer";
 		grid-template-columns: 100%;
-		grid-template-rows: 100px 150px 1fr 350px 200px;
+		grid-template-rows: 100px 150px 1fr 200px;
 	}
 	header.logo{
 		grid-area: logo;
@@ -108,30 +84,20 @@
 		justify-content: center;
 		padding: 0%;
 	}
-	section.nav-nav{
+	header#navbarNav{
 		grid-area: nav;
-		display: flex;
-		justify-content: center;
-		align-items: center; 
-		ul li{
-			display: flex;
-			flex-direction: column;
-			text-decoration: none;
-			text-align: center;
-			list-style: none;
-			padding: 5px 5px;
-		}
+		justify-content: flex-end;
+		text-align: center;
 		ul{
-			padding: 0;
+			font-size: 20px;
 		}
-		a{
-			text-decoration: none;
-			color: black;
-			font-weight: bold;
-		}
+	}
+	.logoInicio{
+		width: 80%;
 	}
 	main{
 		grid-area: main;
+		padding-top: 55px;
 		.titulo__pagina{
 			font-size: 30px;
 		}
@@ -153,9 +119,12 @@
 		.mapa{
 			width: 100%;
 		}
+		.direccion{
+			text-align: center;
+		}
 	}
 	footer{
-		gird-area: footer;
+		grid-area: footer;
 		.datosFooterGrid{
 			text-align: center;
 			font-size: 17px;

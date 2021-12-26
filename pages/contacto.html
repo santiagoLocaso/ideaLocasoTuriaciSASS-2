@@ -6,6 +6,8 @@
 	<meta name="keywords" content="arquitecto, arquitectura, estudio_de_arquitectura, lomas_de_zamora, arquitecto_lomas_de_zamora">
 	<meta name="description" content="Arquitectura|Lomas, contactanos o visitanos en nuestras oficinas">
 	<title>contacto</title>
+	<!-- css bootstrap -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 	<!-- mi css -->
 	<link rel="stylesheet" href="../css/estilo.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,21 +17,33 @@
 </head>
 <body>
 	<div class="gridPadre">
-		<!-- header -->
 		<header>
-			<div>
-				<img class="logo" src="../assets/img/LogoArq2.png" alt="logo">
-			</div>
+			<nav class="navbar navbar-expand-lg navbar-light">
+				<img class="logoInicio" src="../assets/img/LogoArq2.png" alt="img">
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav">
+						<li class="nav-item active">
+				        	<a class="nav-link" href="../index.html">Inicio</a>
+				      	</li>
+				      	<li class="nav-item">
+				        	<a class="nav-link" href="../pages/obras.html">Obras</a>
+				      	</li>
+				     	<li class="nav-item">
+				        	<a class="nav-link" href="../pages/proyectos.html">Proyectos</a>
+				      	</li>
+				      	<li class="nav-item">
+				        	<a class="nav-link" href="../pages/nosotros.html">Nosotros</a>
+				      	</li>
+				      	<li class="nav-item">
+				        	<a class="nav-link" href="#">Contacto</a>
+				      	</li>
+				    </ul>
+				</div>
+			</nav>
 		</header>
-		<section class="nav-nav">
-			<ul>
-				<li><a href="../index.html">INICIO</a></li>
-				<li><a href="obras.html">OBRAS</a></li>
-				<li><a href="proyectos.html">PROYECTOS</a></li>
-				<li><a href="nosotros.html">NOSOTROS</a></li>
-				<li><a href="">CONTACTO</a></li>
-			</ul>
-		</section>
 		<!-- cierre header -->
 		<!-- inicio contenido -->
 		<main>
@@ -54,17 +68,18 @@
 		<!-- cierre contenido -->
 		<!-- footer -->
 		<footer>
-			<div>
-				<img class="logoFooterGrid" src="../assets/img/LogoArq2.png" alt="img">
+			<div class="logoFooter">
+				<img class="logoFooter" src="../assets/img/LogoArq2.png" alt="img">
 			</div>
 			<div class="datosFooterGrid">
 				<h4 class="contactoFooterGrid">Contacto:</h4>
 				<h5 class="datosFooterGrid">11-1234-5678</h5>
 				<h5 class="datosFooterGrid">arquitecto@gmail.com</h5>
 			</div>
+			<div>
 				<!-- redes sociales -->
 			<div class="redesGrid">
-			<a href="#">
+				<a href="#">
 					<img class="whatsappGrid" src="../assets/img/whatsappLogo.png" alt="img">
 				</a>
 				<a href="#">
@@ -77,5 +92,8 @@
 		</footer>
 		<!-- cierre footer -->
 	</div>
+		<!-- scripts de bootstrap -->
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
 </body>
 </html>
